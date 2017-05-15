@@ -6,8 +6,8 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the todo index.")
+    return render(request, "todo/index.html")
 
 def detail(request, task_id):
-    return HttpResponse("Hello, world. You're at the %s index." %task_id)    
+    return render(request,"todo/detail.html",{'task_id':task_id})    
 
