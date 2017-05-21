@@ -6,4 +6,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, "todolist/views/index.html")
+    return render(request, "todolist/index.html")
