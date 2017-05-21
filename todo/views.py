@@ -11,8 +11,8 @@ def index(request):
 	context = {'task_list':task_list}
 	return render(request,"todo/index.html",context)
 
-def detail(request,task_id):
-    task = Task.objects.get(pk=task_id)
+def detail(request,id):
+    task = Task.objects.get(id=id)
     context = {'task':task}
     return render(request,"todo/detail.html",context)    
 

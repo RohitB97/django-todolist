@@ -21,7 +21,7 @@
 
  <ul>
   {% for task in task_list.all %}
-    <li>{{task.name}}</li>
+    <li><a href="{{task.id}}">{{task.name}} | {{task.status}} | {{task.id}}</a></li>
   {% endfor %}
  </ul>
  

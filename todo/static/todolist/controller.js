@@ -5,9 +5,9 @@ app.controller("homeCtrl",function($scope){
 });*/
 
 function addtask(){
-	console.log("test");
-  }
+    $('#task_form').submit();	
+};
 
 function clearfield(){
-	console.log('cleared');
+	$('#task_input').val('');
 };

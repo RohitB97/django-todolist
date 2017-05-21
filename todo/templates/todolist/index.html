@@ -18,14 +18,14 @@
  <h1 style="text-align:center;font-family:verdana;">To-Do LiSt</h1>
 
  <div class="container">
-  <!--<form >-->
+  <form id="task_form" action="/" method="POST">{% csrf_token %}
     <div class="form-group">
-     <input class="form-control" type="text">
+     <input id="task_input" name="task_name" class="form-control" type="text">
     </div>
+  </form>  
 
-    <button class="btn btn-success" onclick="addtask()">Add</button>&nbsp;
-    <a href="/todo/" class="btn btn-primary">View all Tasks</a>&nbsp;
-    <button class="btn btn-danger" onclick="clearfield()">Clear</button> 
-  <!--</form><br><br>-->
+    <button class="btn btn-success" onclick="addtask()">Add</button>&nbsp;  
+    <a href="todo" class="btn btn-primary">View all Tasks</a>&nbsp;
+    <button class="btn btn-danger" onclick="clearfield()">Clear</button>  
  </div>
 </html>
