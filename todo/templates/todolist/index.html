@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html ng-app="homeApp">
+<html>
 <head>
  <title>Django | Todolist</title>
  <!--Importing script CDNs-->
@@ -15,21 +15,17 @@
 
 <body>
 
- <div ng-controller="homeCtrl">
-
  <h1 style="text-align:center;font-family:verdana;">To-Do LiSt</h1>
 
  <div class="container">
-  <form >
-   <div class="form-group">
-    <input class="form-control" type="text" ng-model="task.name">
-   </div>
+  <!--<form >-->
+    <div class="form-group">
+     <input class="form-control" type="text">
+    </div>
 
-    <button class="btn btn-success" ng-click="addtask()">Add</button>&nbsp;
+    <button class="btn btn-success" onclick="addtask()">Add</button>&nbsp;
     <a href="/todo/" class="btn btn-primary">View all Tasks</a>&nbsp;
-    <button class="btn btn-danger" ng-click="clearfield()">Clear</button> 
-  </form><br><br>
+    <button class="btn btn-danger" onclick="clearfield()">Clear</button> 
+  <!--</form><br><br>-->
  </div>
-</div>   
-
 </html>

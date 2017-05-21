@@ -1,1 +1,26 @@
-<h1>Hello, world. You're at todo {{task_id}}</h1>
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Django | Todolist</title>
+ <!--Importing script CDNs-->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script src="{% static 'todolist/controller.js' %}"></script> 
+
+ <!-- Importing all CSS files --> 
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+ <div>
+
+ <h1 style="text-align:center;font-family:verdana;">To-Do LiSt</h1>
+
+  <p>{{task}}</p>
+
+</div>   
+
+</html>
