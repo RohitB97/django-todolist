@@ -15,11 +15,16 @@
 
 <body>
 
- <div>
-
  <h1 style="text-align:center;font-family:verdana;">To-Do LiSt</h1>
+ <div class="container">
 
-  <p>{{task.name}} | {{task.id}}</p>
+  <form id="task_edit_form" action="/todo/{{task.id}}/" method="POST">{% csrf_token %}
+    <div class="form-group">
+     <input id="task_edit" name="task_edit_name" class="form-control" type="text" value="{{task.name}}">
+    </div>
+  </form>
+
+  <button class="btn btn-primary" onclick="edittask()">Update</button> 
 
 </div>   
 

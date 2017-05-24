@@ -8,6 +8,10 @@ function addtask(){
     $('#task_form').submit();	
 };
 
+function edittask(){
+    $('#task_edit_form').submit();	
+};
+
 function clearfield(){
 	$('#task_input').val('');
 };

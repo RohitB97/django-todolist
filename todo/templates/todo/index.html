@@ -15,13 +15,13 @@
 
 <body>
 
- <div>
-
  <h1 style="text-align:center;font-family:verdana;">To-Do LiSt</h1>
 
- <ul>
+ <div class="container">
+
+ <ul class="list-group">
   {% for task in task_list.all %}
-    <li><a href="{{task.id}}">{{task.name}} | {{task.status}} | {{task.id}}</a></li>
+    <li class="list-group-item">{{task.id}}. <a href="{{task.id}}">{{task.name}}</a></li>
   {% endfor %}
  </ul>
  
